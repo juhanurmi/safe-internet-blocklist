@@ -10,3 +10,8 @@ Edit this block list as you like and use it:
 sudo cp /etc/hosts /etc/hosts.backup
 sudo cp hosts /etc/hosts
 ```
+
+I recommend using this:
+
+[Another hosts block project](https://github.com/StevenBlack/hosts)
+
