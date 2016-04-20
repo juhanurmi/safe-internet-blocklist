@@ -55,7 +55,22 @@ ff02::2 ip6-allrouters
 0.0.0.0 graph.facebook.com
 0.0.0.0 m.facebook.com
 0.0.0.0 upload.facebook.com
-
+#
+# Block Youtube
+#0.0.0.0 youtube.com
+#0.0.0.0 youtu.be
+#0.0.0.0 yt.be
+#0.0.0.0 ytimg.com
+#
+# Block Google
+0.0.0.0 google.com
+0.0.0.0 google.fi
+0.0.0.0 google.se
+0.0.0.0 google.uk
+0.0.0.0 google.de
+0.0.0.0 adsense.com
+0.0.0.0 adworks.com
+0.0.0.0 googleanalytics.com
 
 #<spyware-sites>
 # Spyware and user tracking
