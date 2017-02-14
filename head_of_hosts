@@ -1,0 +1,74 @@
+127.0.0.1       localhost
+127.0.1.1       juha-desktop
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+
+#
+# Finnish blocklist extension for a list from
+# http://someonewhocares.org/hosts/hosts
+# and
+# https://github.com/StevenBlack/hosts
+#
+# My rules for technology usage
+#
+# 1. It is time for a walk when the sun is shining
+# 2. Read books not news, news makes you stupid
+# 3. Be social: reading social media is not a social activity
+# 4. Mobile phone is a tracking device, avoid it
+# 5. Physical labour is better than non-physical labour
+# 6. Being in forests is important: experience trees and lakes
+#
+# You can make your own rules :)
+#
+# You can easily block harmfull material.
+# 0.0.0.0 some_harmful_domain
+# For instance,
+0.0.0.0 mvlehti.net
+0.0.0.0 iltalehti.fi www.iltalehti.fi
+0.0.0.0 iltasanomat.fi www.iltasanomat.fi
+0.0.0.0 hs.fi www.hs.fi
+0.0.0.0 kauppalehti.fi
+0.0.0.0 taloussanomat.fi www.taloussanomat.fi
+0.0.0.0 yle.fi
+0.0.0.0 hs.fi
+#
+# Block Facebook
+0.0.0.0 www.facebook.com 
+0.0.0.0 facebook.com
+0.0.0.0 login.facebook.com
+0.0.0.0 secure.facebook.com
+0.0.0.0 latest.facebook.com
+0.0.0.0 inyour.facebook.com
+0.0.0.0 beta.facebook.com
+0.0.0.0 static.facebook.com
+0.0.0.0 touch.facebook.com
+0.0.0.0 developers.facebook.com
+0.0.0.0 newsroom.fb.com
+0.0.0.0 pixel.facebook.com
+0.0.0.0 apps.facebook.com
+0.0.0.0 graph.facebook.com
+0.0.0.0 m.facebook.com
+0.0.0.0 upload.facebook.com
+#
+# Block Youtube
+#0.0.0.0 youtube.com
+#0.0.0.0 youtu.be
+#0.0.0.0 yt.be
+#0.0.0.0 ytimg.com
+#
+# Block Google
+#0.0.0.0 google.com
+#0.0.0.0 google.fi
+#0.0.0.0 google.se
+#0.0.0.0 google.uk
+#0.0.0.0 google.de
+0.0.0.0 adsense.com
+0.0.0.0 adworks.com
+0.0.0.0 googleanalytics.com
+

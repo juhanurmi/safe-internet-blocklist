@@ -1,77 +1,3 @@
-127.0.0.1       localhost
-127.0.1.1       juha-desktop
-
-# The following lines are desirable for IPv6 capable hosts
-::1     ip6-localhost ip6-loopback
-fe00::0 ip6-localnet
-ff00::0 ip6-mcastprefix
-ff02::1 ip6-allnodes
-ff02::2 ip6-allrouters
-
-
-#
-# Finnish blocklist extension for a list from
-# http://someonewhocares.org/hosts/hosts
-# and
-# https://github.com/StevenBlack/hosts
-#
-# My rules for technology usage
-#
-# 1. It is time for a walk when the sun is shining
-# 2. Read books not news, news makes you stupid
-# 3. Be social: reading social media is not a social activity
-# 4. Mobile phone is a tracking device, avoid it
-# 5. Physical labour is better than non-physical labour
-# 6. Being in forests is important: experience trees and lakes
-#
-# You can make your own rules :)
-#
-# You can easily block harmfull material.
-# 0.0.0.0 some_harmful_domain
-# For instance,
-0.0.0.0 mvlehti.net
-0.0.0.0 iltalehti.fi www.iltalehti.fi
-0.0.0.0 iltasanomat.fi www.iltasanomat.fi
-0.0.0.0 hs.fi www.hs.fi
-0.0.0.0 kauppalehti.fi
-0.0.0.0 taloussanomat.fi www.taloussanomat.fi
-0.0.0.0 yle.fi
-0.0.0.0 hs.fi
-#
-# Block Facebook
-0.0.0.0 www.facebook.com 
-0.0.0.0 facebook.com
-0.0.0.0 login.facebook.com
-0.0.0.0 secure.facebook.com
-0.0.0.0 latest.facebook.com
-0.0.0.0 inyour.facebook.com
-0.0.0.0 beta.facebook.com
-0.0.0.0 static.facebook.com
-0.0.0.0 touch.facebook.com
-0.0.0.0 developers.facebook.com
-0.0.0.0 newsroom.fb.com
-0.0.0.0 pixel.facebook.com
-0.0.0.0 apps.facebook.com
-0.0.0.0 graph.facebook.com
-0.0.0.0 m.facebook.com
-0.0.0.0 upload.facebook.com
-#
-# Block Youtube
-#0.0.0.0 youtube.com
-#0.0.0.0 youtu.be
-#0.0.0.0 yt.be
-#0.0.0.0 ytimg.com
-#
-# Block Google
-#0.0.0.0 google.com
-#0.0.0.0 google.fi
-#0.0.0.0 google.se
-#0.0.0.0 google.uk
-#0.0.0.0 google.de
-0.0.0.0 adsense.com
-0.0.0.0 adworks.com
-0.0.0.0 googleanalytics.com
-
 # This hosts file is a merged collection of hosts from reputable sources,
 # with a dash of crowd sourcing via Github
 #
@@ -83,6 +9,12 @@ ff02::2 ip6-allrouters
 #
 # ===============================================================
 
+127.0.0.1 localhost
+127.0.0.1 localhost.localdomain
+127.0.0.1 local
+255.255.255.255 broadcasthost
+::1 localhost
+fe80::1%lo0 localhost
 
 # Custom host records are listed here.
 
@@ -605,6 +537,7 @@ ff02::2 ip6-allrouters
 # [applift]
 0.0.0.0 applift.com
 # use finer grained hostnames?
+#127.0.0.1 tracking.applift.com
 
 # [EFF Tracker Detection]
 0.0.0.0 trackersimulator.org
@@ -8760,6 +8693,7 @@ ff02::2 ip6-allrouters
 #                                                          #
 # Notes: The Operating System does not read the "#" symbol #
 # You can create your own notes, after the # symbol        #
+# This *must* be the first line: 127.0.0.1     localhost   #
 #                                                          #
 #**********************************************************#
 # -------------- Updated: January-23-2017 ---------------- #
@@ -14335,6 +14269,7 @@ ff02::2 ip6-allrouters
 0.0.0.0 pics.skenzo.com
 0.0.0.0 ads.webhosting.info
 # [Disney Company][ABC News][INFOSEEK]
+# 127.0.0.1  hb.disney.go.com #[disabled affects links]
 0.0.0.0 seavideo-ak.espn.go.com
 0.0.0.0 adsatt.abcnews.starwave.com
 0.0.0.0 adsatt.disney.starwave.com
@@ -17649,6 +17584,7 @@ ff02::2 ip6-allrouters
 0.0.0.0 kaspersky.122.2o7.net
 0.0.0.0 ldsfch.112.2o7.net
 0.0.0.0 nautilus.122.2o7.net
+# 127.0.0.1  survey.112.2o7.net #[may affect Sprint.com]
 0.0.0.0 tirerackcom.112.2o7.net
 0.0.0.0 stats.esomniture.com
 0.0.0.0 www.omniture.com
@@ -21103,6 +21039,7 @@ ff02::2 ip6-allrouters
 # [Virtualxs][AS15535][62.129.128.0 - 62.129.159.255]
 0.0.0.0 banners.payserve.com
 # [Visible Measures][AS14742][64.95.73.0 - 64.95.73.31]
+# 127.0.0.1  cdn.visiblemeasures.com #[affects Collegehumor.com videos]
 0.0.0.0 video.od.visiblemeasures.com
 # [Vladlen Turkevich][AS41665][213.155.2.32 - 213.155.2.39]
 # [Voxel][AS29791][107.6.64.0 - 107.6.127.255]
@@ -21982,6 +21919,7 @@ ff02::2 ip6-allrouters
 # blocks most advertising you would otherwise be subjected to on the
 # internet.
 
+# There is a version of this file that uses 127.0.0.1 instead of 0.0.0.0
 # available at http://someonewhocares.org/hosts/.
 # On some machines this may run minutely faster, however the zero version
 # may not be compatible with all systems.
@@ -22030,6 +21968,7 @@ ff02::2 ip6-allrouters
 # your information back to a company.
 
 #<localhost>
+#fe80::1%lo0	localhost
 #</localhost>
 
 #<shock-sites>
