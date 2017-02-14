@@ -18,5 +18,5 @@ I recommend using this:
 ```sh
 wget -O steven_hosts https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 cat head_of_hosts > hosts
-grep "255\.255\.255\.255\|127\.0\.0\.1\|::1" steven_hosts >> hosts
+grep -v "255\.255\.255\.255\|127\.0\.0\.1\|::1" steven_hosts >> hosts
 ```
