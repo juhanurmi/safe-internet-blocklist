@@ -71,4 +71,6 @@ ff02::2 ip6-allrouters
 0.0.0.0 adsense.com
 0.0.0.0 adworks.com
 0.0.0.0 googleanalytics.com
-
+#
+# Block extremely annoying ad
+0.0.0.0 destricso.com
